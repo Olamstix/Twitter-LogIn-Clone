@@ -1,0 +1,123 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.container-main {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+.img-1{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.img-2 {
+    position: absolute;
+    top: 100px;
+    left: 180px;
+}
+
+.right-container-img-column{
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+    text-align: left;
+    padding: 30px;
+}
+
+.img-3{
+    width: 70px;
+    height: auto;
+    margin-left: none;
+}
+
+h1{
+    font-size: 80px;
+    font-weight: 10rem;
+    margin-top: 50px;
+}
+h2{
+    font-size: 30px;
+    font-weight: 1000;
+    margin-top: 35px;
+}
+
+.sign-up {
+    margin-top: 35px;
+    padding: 15px 150px 15px 150px;
+    border-radius: 30px;
+    border: none;
+    background: #38A1F2;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+.sign-up:hover{
+    background: white;
+    color: #38A1F2;
+    border: 1px solid #38A1F2;
+}
+.login {
+    margin-top: 35px;
+    padding: 15px 150px 15px 155px;
+    border-radius: 30px;
+    border: 1px solid #38A1F2;
+    background: #fff;
+    color: #38A1F2;
+    text-align: center;
+    cursor: pointer;
+}
+.login:hover{
+    background: #38A1F2;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+
+.row-of-links-1, .row-of-links-2 {
+    padding: 20px;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+}
+.row-of-links-1 a, .row-of-links-2 a{
+    text-decoration: none;
+    color: rgb(99, 99, 99);
+    margin: 0 20px;
+}
+.row-of-links-2{
+    padding: 10px;
+}
+
+@media(max-width: 500px){
+    .left-container-img-row{
+        display: none;
+    }
+    .right-container-img-column{
+
+    }
+    h1{
+        font-size: 45px;
+        margin-top: 10px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    .sign-up, .login{
+        margin-top: 20x;
+        padding: 10px 100px 10px 100px;;
+    }
+    .row-of-links-1, .row-of-links-2{
+            flex-direction: row;
+    }
+    }       
